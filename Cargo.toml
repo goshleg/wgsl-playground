@@ -1,0 +1,19 @@
+[package]
+name = "wgsl-playground"
+version = "0.1.8"
+authors = ["Paul Butler <paulgb@gmail.com>"]
+edition = "2018"
+license = "MIT"
+description = "Playground for experimenting with WGSL fragment shaders with live-reloading."
+resolver = "2"
+repository = "https://github.com/paulgb/wgsl-playground"
+
+[dependencies]
+bytemuck = { version = "1.20.0", features = ["derive"] }
+clap = { version = "4.5.23", features = ["derive"] }
+futures = "0.3.31"
+notify = "7.0.0"
+wgpu = { version = "23.0.1", features = ['default'] }
+winit = "0.30.5"
+wgpu-subscriber = "0.1.0"
+spin_sleep = "1.2.1"
